@@ -86,9 +86,7 @@ if(isset($_SESSION['parent'])){
   <button type="submit" class="btn btn-success btn-block mb-4"><i class="fa-solid fa-right-to-bracket"></i> เข้าสู่ระบบ</button>
 
   <!-- Register buttons -->
-  <div class="text-center">
-  <p><a href="forget.php"><i class="fa-solid fa-question"></i> ลืมรหัสผ่าน</a> <a href="register.php"><i class="fa-solid fa-file-pen"></i> ลงทะเบียนผู้ปกครอง</a></p>
-    
+  
 </form>
                                     
                                     
