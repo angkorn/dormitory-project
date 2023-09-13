@@ -1,0 +1,13 @@
+@font-face {
+    font-family: Chulabhornlikittext;
+    src: url('font/chulabhornlikittext-medium.woff2') format('woff2'), 
+         url('font/chulabhornlikittext-medium.woff') format('woff'),
+
+        }
+        div{
+            font-family: 'Chulabhornlikittext';
+        }
+        h3{
+            font-family: 'Anuphan';
+        }
+
