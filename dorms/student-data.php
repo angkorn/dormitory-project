@@ -2,6 +2,19 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" type="text/javascript"></script>
+<link href="https://cdn.datatables.net/v/dt/dt-1.13.6/b-2.4.2/datatables.min.css" rel="stylesheet">
+ <link href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css" rel="stylesheet">
+<script src="https://cdn.datatables.net/v/dt/dt-1.13.6/b-2.4.2/datatables.min.js" defer></script>
+
+<script>
+  $(document).ready( function () {
+    
+    $('#myTable').DataTable( {
+} );
+} );
+</script>
+
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
   <h1 class="h3 mb-0 text-gray-800">นักเรียน</h1>
 
@@ -23,7 +36,7 @@
     <!-- DataTales Example -->
 
     <div class="table-responsive">
-      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+      <table class="table table-bordered" name="myTable" id="myTable" width="100%" cellspacing="0">
         <thead>
           <tr>
             <th style="width: 100px">ลำดับที่</th>
@@ -38,7 +51,7 @@
         <tbody>
           <?php $i = 0;
           $dorm = $rdorm['dorm'];
-          $student = $conn->prepare("SELECT * FROM student WHERE dorm=:d order by grade ASC");
+          $student = $conn->prepare("SELECT * FROM student WHERE dorm=:d order by floor ASC, side");
           $student->bindParam(":d", $dorm);
           $student->execute();
           $in = 3;
