@@ -93,7 +93,12 @@ if(isset($_SESSION['parent'])){
                             </div>
                         </div>
                     </div>
-               
+                    <div class="container my-auto">
+                    <div class="copyright text-center text-white my-auto">
+                        <span>Copyright &copy; Princess Chulabhorn Science High School Trang 2023</span>
+                        <span>ซอร์สโค้ดเผยแพร่ภายใต้สัญญาอนุญาต MIT</span>
+                    </div>
+                </div>
 
         </div>
     </div>

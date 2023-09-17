@@ -140,8 +140,8 @@ else
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Princess Chulabhorn Science High School Trang 2023</span>
-                    </div>
+                    <span>Copyright &copy; Princess Chulabhorn Science High School Trang 2023 (Theme by SB Admin 2)</span>
+                        <span>ซอร์สโค้ดเผยแพร่ภายใต้สัญญาอนุญาต MIT</span>                    </div>
                 </div>
             </footer>
             <!-- End of Footer -->
